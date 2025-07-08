@@ -1,0 +1,21 @@
+.greeting {
+  background-color: aquamarine;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  display: inline-block;
+  margin: 10px;
+}
+
+.card:hover {
+  background-color: aliceblue;
+  box-shadow: 5px 5px #eee;
+}

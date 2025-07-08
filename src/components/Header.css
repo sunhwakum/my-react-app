@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbit&display=swap');
+
+.product-header {
+  width: 100%;
+  padding: 28px 0 18px 0;
+  background: linear-gradient(90deg, #1a2980 0%, #26d0ce 100%);
+  box-shadow: 0 4px 24px 0 #00fff755, 0 1.5px 0 #00fff7aa;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin-bottom: 24px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.header-icon {
+  font-size: 2.2rem;
+  color: #00fff7;
+  filter: drop-shadow(0 0 8px #00fff7cc);
+  animation: header-pop 1.3s cubic-bezier(.6,1.6,.4,1) 1;
+}
+
+@keyframes header-pop {
+  0% { transform: scale(0.2) rotate(-40deg);}
+  70% { transform: scale(1.15) rotate(10deg);}
+  100% { transform: scale(1) rotate(0);}
+}
+
+.header-title {
+  font-family: 'Orbit', 'Pretendard', sans-serif;
+  font-size: 2.1rem;
+  color: #fff;
+  text-shadow:
+    0 0 10px #00fff7,
+    0 0 18px #00fff788,
+    0 0 32px #00fff7;
+  letter-spacing: 2px;
+  margin: 0;
+  animation: header-flicker 2.2s infinite alternate;
+}
+
+@keyframes header-flicker {
+  0%,100% { opacity: 1;}
+  90% { opacity: 0.7;}
+}

@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Orbit&display=swap');
+
+.home-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a2980 0%, #26d0ce 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-family: 'Orbit', 'Jua', 'Pretendard', sans-serif;
+  overflow: hidden;
+}
+
+.home-card {
+  background: rgba(30, 30, 60, 0.82);
+  border-radius: 22px;
+  box-shadow: 0 0 32px 8px #00fff799, 0 4px 32px 0 #000a;
+  padding: 50px 48px 38px 48px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  animation: float 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+  0% { transform: translateY(0);}
+  100% { transform: translateY(-14px);}
+}
+
+.greeting {
+  font-size: 2.7rem;
+  margin-bottom: 18px;
+  font-family: 'Jua', 'Orbit', sans-serif;
+  letter-spacing: 1px;
+}
+
+.neon-text {
+  color: #fff;
+  text-shadow:
+    0 0 8px #00fff7,
+    0 0 20px #00fff7,
+    0 0 32px #00fff7,
+    0 0 40px #fff;
+  animation: neon-flicker 2.5s infinite alternate;
+}
+
+@keyframes neon-flicker {
+  0%, 100% { opacity: 1; }
+  95% { opacity: 0.7; }
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #e0eaff;
+  margin-bottom: 8px;
+  line-height: 1.7;
+}
+
+.highlight {
+  color: #00fff7;
+  font-weight: bold;
+  text-shadow: 0 0 8px #00fff7cc;
+}
+
+.shine {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-15deg);
+  width: 180px;
+  height: 60px;
+  background: linear-gradient(90deg, #fff8, #fff2 40%, transparent 100%);
+  filter: blur(8px);
+  opacity: 0.6;
+  pointer-events: none;
+  border-radius: 100px;
+  animation: shine-move 3s infinite alternate;
+  z-index: 1;
+}
+
+@keyframes shine-move {
+  0% { left: 45%; opacity: 0.45;}
+  100% { left: 55%; opacity: 0.75;}
+}
+
+.home-footer {
+  position: fixed;
+  bottom: 18px;
+  width: 100%;
+  text-align: center;
+  color: #c6f7ff;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  text-shadow: 0 0 4px #00fff7bb;
+  z-index: 10;
+  pointer-events: none;
+}
