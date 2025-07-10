@@ -1,0 +1,129 @@
+/* 전체 폼 컨테이너 */
+.formContainer {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #fafafa;
+  font-family: "Segoe UI", sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  text-align: left;
+}
+
+/* 제목 */
+h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  word-break: keep-all;
+}
+
+/* 섹션 구간 구분 */
+.section {
+  margin-bottom: 2rem;
+}
+
+/* 입력 그룹 */
+.formGroup {
+  margin-bottom: 1.2rem;
+}
+
+/* 라벨 */
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+/* 입력창, 셀렉트, 텍스트에어리어 기본 설정 */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+/* 라디오/체크박스는 width 제한 없음 */
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+/* 제출 버튼 */
+.submitButton {
+  width: 100%;
+  font-size: 1.1rem;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.submitButton:hover {
+  background-color: #004c99;
+}
+
+.submitButton:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+/* 에러 메시지 */
+.errorText {
+  color: #d00;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+}
+
+/* 반응형 대응 */
+@media screen and (max-width: 768px) {
+  .formContainer {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .submitButton {
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 0.95rem;
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .formContainer {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  .submitButton {
+    font-size: 0.95rem;
+  }
+  .submitButton:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+}

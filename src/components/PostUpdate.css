@@ -1,0 +1,61 @@
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.board-container {
+  max-width: 700px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  padding: 30px 24px;
+}
+
+.board-header {
+  margin-bottom: 18px;
+}
+
+.board-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.write-form input[type="text"],
+.write-form textarea,
+.write-form input[type="file"] {
+  width: 100%;
+  margin-bottom: 14px;
+  padding: 8px;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.write-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.form-btns {
+  text-align: right;
+}
+
+.save-btn,
+.list-btn {
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 7px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.save-btn:hover,
+.list-btn:hover {
+  background: #1565c0;
+}
