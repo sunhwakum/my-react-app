@@ -1,5 +1,6 @@
 // src/App.jsx
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import WebcamCapture from "./components/WebcamCapture";
 
 import Home from "./components/Home";
 import UserCard from "./components/UserCard";
@@ -9,7 +10,6 @@ import RockPaperScissors from "./components/RockPaperScissors";
 import Pacman from "./components/Pacman"; // 팩맨 컴포넌트
 import ConsultForm from "./components/ConsultForm"; // 상담 폼 컴포넌트
 import ConsultComplete from "./components/ConsultComplete";
-
 import PostList from "./components/PostList";
 import PostDetail from "./components/PostDetail";
 import PostCreate from "./components/PostCreate";
@@ -20,8 +20,8 @@ import MyBarChart from "./components/MyBarChart";
 import SeoulMeanTemp from "./components/SeoulMeanTemp";
 import MyWordCloud from "./components/MyWordCloud";
 import MyMap from "./components/MyMap";
+import DistanceSensorView from "./components/DistanceSensorView";
 
-import WebcamCapture from "./components/WebcamCapture"; // 웹캠 캡처 컴포넌트 추가
 
 import "./App.css";
 
@@ -49,6 +49,7 @@ function App() {
 
         {/* 웹캠 캡처 링크 추가 */}
         <Link to="/webcam">웹캠 캡처</Link>
+        <Link to="/sensor/distance">장애물 감지</Link>
       </nav>
 
       <Routes>
@@ -87,6 +88,7 @@ function App() {
 
         {/* 웹캠 캡처 라우트 추가 */}
         <Route path="/webcam" element={<WebcamCapture />} />
+        <Route path="/sensor/distance" element={<DistanceSensorView />} />
       </Routes>
     </BrowserRouter>
   );
